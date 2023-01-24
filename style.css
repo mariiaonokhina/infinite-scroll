@@ -1,0 +1,125 @@
+* {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+
+    font-family: 'Hind Siliguri', sans-serif;
+    background-color: whitesmoke;
+    
+}
+
+#title {
+
+    text-align: center;
+    margin: 25px 15px 0px 0px;
+    font-size: 40px;
+    letter-spacing: 3px;
+
+    /* Gradient title */
+    background: linear-gradient(
+        to right,
+        #18b4db 0%,
+        #053275 100%
+    );
+    background-clip: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+/* Loader styling */
+#loader {
+
+    /* Position: fixed so that it's stays while scrolling */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.8);
+    
+}
+
+#loader img {
+
+    /* A trick so that the loader img is perfectly centered inside the div */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+/* Styling Image Container */
+.imageContainer {
+
+    /* Margin: top+bottom left+right */
+    margin: 10px 30%;
+
+}
+
+/* Makes all images the same width within the container */
+.imageContainer img {
+
+    width: 100%;
+    margin-top: 5px;
+
+}
+
+/* For responsive design - Tablets */
+@media screen and (max-width: 1000px) {
+
+    #title {
+
+        font-size: 30px;
+
+    }
+
+    .imageContainer {
+
+        /* Margin: top+bottom left+right */
+        margin: 10px 20%;
+    
+    }
+
+}
+
+/* For responsive design - Medium phones */
+@media screen and (max-width: 800px) {
+
+    #title {
+
+        font-size: 22px;
+
+    }
+
+    .imageContainer {
+
+        /* Margin: top+bottom left+right */
+        margin: 10px 10%;
+    
+    }
+
+}
+
+/* For responsive design - Small phones */
+@media screen and (max-width: 400px) {
+
+    #title {
+
+        font-size: 18px;
+
+    }
+
+    .imageContainer {
+
+        /* Margin: top+bottom left+right */
+        margin: 10px 5%;
+    
+    }
+
+}
